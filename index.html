@@ -2,7 +2,7 @@
 layout: default
 ---
 <h1 class="content-subhead"><a href="{{site.baseurl}}/post-musica">Música</a></h1>
-{% for posts in site.categories.musica-album %}
+{% for posts in site.categories.musica-album limit:1 %}
 <section class="post pure-u-1 pure-u-lg-1-5">
     <div class="post-description">
       <div class="">
@@ -15,7 +15,7 @@ layout: default
 </section>
 {% endfor %}
 
-{% for posts in site.categories.musica-single %}
+{% for posts in site.categories.musica-single limit:1 %}
 <section class="post pure-u-1 pure-u-lg-1-5">
     <div class="post-description">
       <div class="">
@@ -29,7 +29,7 @@ layout: default
 {% endfor %}
 
 <h1 class="content-subhead"><a href="{{site.baseurl}}/post-artigo">Artigos</a></h1>
-{% for posts in site.categories.artigo %}
+{% for posts in site.categories.artigo limit:1 %}
 <section class="post">
     <header class="post-header">
 
