@@ -2,12 +2,12 @@
     <ul class="pure-menu-list">
         <li class="pure-menu-item pure-menu{% if page.url == '/' %}-selected{% endif %}"><a href="{{site.baseurl}}/" class="pure-menu-link">Home</a></li>
         <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-            <p id="menuLink1" class="pure-menu-link pure-menu{% if page.url contains 'post-arte' or page.url contains 'post-musica' or page.url contains 'post-jogo' or page.url contains 'post-artigo' %}-selected{% endif %}">Posts</p>
+            <p id="menuLink1" class="pure-menu-link">Posts</p>
             <ul class="pure-menu-children">
-                <li class="pure-menu-item"><a href="{{site.baseurl}}/post-artigo" class="pure-menu-link">Artigos</a></li>
-                <li class="pure-menu-item"><a href="{{site.baseurl}}/post-musica" class="pure-menu-link">Música</a></li>
-                <li class="pure-menu-item"><a href="{{site.baseurl}}/post-jogo" class="pure-menu-link">Jogos</a></li>
-                <li class="pure-menu-item"><a href="{{site.baseurl}}/post-arte" class="pure-menu-link">Arte</a></li>
+                <li class="pure-menu-item pure-menu{% if page.url contains 'post-artigo' %}-selected{% endif %}"><a href="{{site.baseurl}}/post-artigo" class="pure-menu-link }">Artigos</a></li>
+                <li class="pure-menu-item pure-menu{% if page.url contains 'post-musica' %}-selected{% endif %}"><a href="{{site.baseurl}}/post-musica" class="pure-menu-link">Música</a></li>
+                <li class="pure-menu-item pure-menu{% if page.url contains 'post-jogo' %}-selected{% endif %}"><a href="{{site.baseurl}}/post-jogo" class="pure-menu-link">Jogos</a></li>
+                <li class="pure-menu-item pure-menu{% if page.url contains 'post-arte' %}-selected{% endif %}"><a href="{{site.baseurl}}/post-arte" class="pure-menu-link">Arte</a></li>
             </ul>
         </li>
         <li class="pure-menu-item pure-menu{% if page.url contains 'sobre' %}-selected{% endif %}"><a href="{{site.baseurl}}/sobre" class="pure-menu-link">Sobre</a></li>
