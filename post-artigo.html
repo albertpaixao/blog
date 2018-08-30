@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<h1 class="content-subhead">Artigos</h1>
+{% for posts in site.categories.artigo %}
+<section class="post">
+    <header class="post-header">
+
+        <h2 class="post-title"><a href="{{site.baseurl}}{{posts.url}}">{{posts.title}}</a></h2>
+
+        <p class="post-meta">
+            Por <a href="#" class="post-author pure-u-1">{{posts.author}}</a>
+        </p>
+
+    </header>
+
+    <div class="post-description">
+      <div class="pure-u-1 pure-u-lg-2-5">
+        <img class="pure-img-responsive post-images" src="{{site.baseurl}}/{{posts.imagem-capa}}" alt="{{post.imagem-capa-meta}}">
+      </div>
+      <div class="pure-u-1 pure-u-lg-2-5">
+        <p>
+            {{posts.meta}}
+        </p>
+      </div>
+
+
+    </div>
+</section>
+{% endfor %}

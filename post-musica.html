@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<h1 class="content-subhead">Albuns e EPs</h1>
+{% for posts in site.categories.musica-album %}
+<section class="post pure-u-1 pure-u-lg-1-5">
+    <div class="post-description">
+      <div class="">
+        <a href="{{site.baseurl}}{{posts.url}}">
+          <img class="pure-img-responsive" src="{{site.baseurl}}/{{posts.imagem-capa}}" alt="{{post.imagem-capa-meta}}">
+        </a>
+      </div>
+
+    </div>
+</section>
+{% endfor %}
+
+<h1 class="content-subhead">Singles</h1>
+{% for posts in site.categories.musica-single %}
+<section class="post pure-u-1 pure-u-lg-1-5">
+    <div class="post-description">
+      <div class="">
+        <a href="{{site.baseurl}}{{posts.url}}">
+          <img class="pure-img-responsive" src="{{site.baseurl}}/{{posts.imagem-capa}}" alt="{{post.imagem-capa-meta}}">
+        </a>
+      </div>
+
+    </div>
+</section>
+{% endfor %}

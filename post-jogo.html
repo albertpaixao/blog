@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{% for posts in site.categories.jogo %}
+<section class="post">
+    <header class="post-header">
+
+        <h2 class="post-title"><a href="{{site.baseurl}}{{posts.url}}">{{posts.title}}</a></h2>
+
+        <p class="post-meta">
+            By <a href="#" class="post-author pure-u-1">{{posts.author}}</a>
+        </p>
+
+    </header>
+
+    <div class="post-description">
+      <div class="pure-u-1 pure-u-lg-2-5">
+        <img class="pure-img-responsive" src="{{site.baseurl}}/{{posts.imagem-capa}}" alt="{{post.imagem-capa-meta}}">
+      </div>
+      <div class="pure-u-1 pure-u-lg-2-5">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            {{posts.meta}}
+        </p>
+      </div>
+
+
+    </div>
+</section>
+{% endfor %}
