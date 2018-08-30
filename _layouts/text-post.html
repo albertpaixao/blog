@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+
+
+<section class="post">
+    <header class="post-header">
+
+        <h2 class="post-title">{{page.title}}</h2>
+
+        <p class="post-meta">
+            By <a href="#" class="post-author">{{page.author}}</a> em <a class="post-category post-category-design" href="#">{{page.categoria}}</a>
+        </p>
+    </header>
+
+    <div class="post-description">
+        <img class="post-images pure-img-responsive" src="{{site.baseurl}}/{{page.imagem-capa}}" alt="{{page.imagem-capa-meta}}">
+        <p>
+            {{content}}
+        </p>
+    </div>
+</section>
